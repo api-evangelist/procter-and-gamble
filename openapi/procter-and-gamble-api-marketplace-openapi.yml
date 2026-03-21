@@ -1,0 +1,71 @@
+openapi: 3.1.0
+info:
+  title: Procter & Gamble API Marketplace
+  description: >-
+    The Procter & Gamble API Marketplace provides access to P&G's suite of
+    APIs for partners, suppliers, and developers. The platform enables
+    integration with P&G's supply chain, product data, and business
+    operations for building applications that interact with P&G systems.
+  version: '1.0'
+servers:
+  - url: https://developer.pg.com/api
+tags:
+  - name: Products
+    description: Access P&G product catalog and data.
+  - name: Supply Chain
+    description: Integration with P&G supply chain operations.
+  - name: Orders
+    description: Manage and track orders.
+paths:
+  /products:
+    get:
+      operationId: listProducts
+      summary: List products
+      description: >-
+        Retrieves a list of P&G products with details including brand,
+        category, UPC codes, and product specifications.
+      tags:
+        - Products
+      parameters:
+        - name: brand
+          in: query
+          description: Filter by brand name.
+          schema:
+            type: string
+        - name: category
+          in: query
+          description: Filter by product category.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+  /supply-chain/shipments:
+    get:
+      operationId: listShipments
+      summary: List shipments
+      description: >-
+        Retrieves a list of shipments with tracking, status, and delivery
+        information for supply chain partners.
+      tags:
+        - Supply Chain
+      responses:
+        '200':
+          description: Success
+  /orders:
+    get:
+      operationId: listOrders
+      summary: List orders
+      description: >-
+        Retrieves a list of orders placed through the P&G partner
+        integration platform.
+      tags:
+        - Orders
+      responses:
+        '200':
+          description: Success
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
