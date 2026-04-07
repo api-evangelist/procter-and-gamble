@@ -10,12 +10,12 @@ info:
 servers:
   - url: https://developer.pg.com/api
 tags:
+  - name: Orders
+    description: Manage and track orders.
   - name: Products
     description: Access P&G product catalog and data.
   - name: Supply Chain
     description: Integration with P&G supply chain operations.
-  - name: Orders
-    description: Manage and track orders.
 paths:
   /products:
     get:

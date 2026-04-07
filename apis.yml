@@ -1,16 +1,14 @@
 aid: procter-and-gamble
-url: 
-  https://raw.githubusercontent.com/api-evangelist/procter-and-gamble/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/procter-and-gamble/refs/heads/main/apis.yml
 apis:
   - aid: procter-and-gamble:api-marketplace
     name: Procter & Gamble API Marketplace
     tags:
       - Consumer Goods
-      - Supply Chain
-      - Retail
       - Manufacturing
-    image: 
-      https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+      - Retail
+      - Supply Chain
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://developer.pg.com
     humanURL: https://developer.pg.com/
     properties:
