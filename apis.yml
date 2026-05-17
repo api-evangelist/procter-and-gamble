@@ -7,7 +7,7 @@ description: >-
   API Marketplace at developer.pg.com that provides partners, suppliers, and
   developers with programmatic access to P&G systems for integrating with the
   company's supply chain, product data, and business operations.
-type: Contract
+kind: contract
 position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
