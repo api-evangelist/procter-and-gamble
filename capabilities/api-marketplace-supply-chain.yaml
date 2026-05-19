@@ -1,0 +1,70 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Procter & Gamble API Marketplace — Supply Chain
+  description: 'Procter & Gamble API Marketplace — Supply Chain. 1 operations. Lead operation: List shipments. Self-contained
+    Naftiko capability covering one Procter And Gamble business surface.'
+  tags:
+  - Procter And Gamble
+  - Supply Chain
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    PROCTER_AND_GAMBLE_API_KEY: PROCTER_AND_GAMBLE_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: api-marketplace-supply-chain
+    baseUri: https://developer.pg.com/api
+    description: Procter & Gamble API Marketplace — Supply Chain business capability. Self-contained, no shared references.
+    resources:
+    - name: supply-chain-shipments
+      path: /supply-chain/shipments
+      operations:
+      - name: listshipments
+        method: GET
+        description: List shipments
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    authentication:
+      type: bearer
+      token: '{{env.PROCTER_AND_GAMBLE_API_KEY}}'
+  exposes:
+  - type: rest
+    namespace: api-marketplace-supply-chain-rest
+    port: 8080
+    description: REST adapter for Procter & Gamble API Marketplace — Supply Chain. One Spectral-compliant resource per consumed
+      operation, prefixed with /v1.
+    resources:
+    - path: /v1/supply-chain/shipments
+      name: supply-chain-shipments
+      description: REST surface for supply-chain-shipments.
+      operations:
+      - method: GET
+        name: listshipments
+        description: List shipments
+        call: api-marketplace-supply-chain.listshipments
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: api-marketplace-supply-chain-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Procter & Gamble API Marketplace — Supply Chain. One tool per consumed operation, routed
+      inline through this capability's consumes block.
+    tools:
+    - name: list-shipments
+      description: List shipments
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: api-marketplace-supply-chain.listshipments
+      outputParameters:
+      - type: object
+        mapping: $.
