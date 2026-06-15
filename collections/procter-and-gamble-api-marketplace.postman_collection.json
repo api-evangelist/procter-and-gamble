@@ -1,0 +1,252 @@
+{
+  "item": [
+    {
+      "id": "c5820362-e6eb-4ac4-a030-bd99acc59cee",
+      "name": "Orders",
+      "description": {
+        "content": "Manage and track orders.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d7861e81-6921-4bff-b288-84b28ecf327e",
+          "name": "List orders",
+          "request": {
+            "name": "List orders",
+            "description": {
+              "content": "Retrieves a list of orders placed through the P&G partner integration platform.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "orders"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f83ae4f7-d875-4407-8377-9cd1435a7bf8",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "0c9567fb-d385-4232-9ee1-6f48dfee244b",
+      "name": "Products",
+      "description": {
+        "content": "Access P&G product catalog and data.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "cd0e3b20-579c-4aff-bcf0-f6ac383972a8",
+          "name": "List products",
+          "request": {
+            "name": "List products",
+            "description": {
+              "content": "Retrieves a list of P&G products with details including brand, category, UPC codes, and product specifications.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "products"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "brand",
+                  "value": "<string>",
+                  "description": "Filter by brand name."
+                },
+                {
+                  "disabled": false,
+                  "key": "category",
+                  "value": "<string>",
+                  "description": "Filter by product category."
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "19ec5886-a654-418b-ae99-7614502682ed",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "products"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "brand",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "category",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "8d4381a2-66ca-477e-bc14-d4edf5e8adbe",
+      "name": "Supply Chain",
+      "description": {
+        "content": "Integration with P&G supply chain operations.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "06db1125-3290-4475-85e0-08fdc5e306c1",
+          "name": "List shipments",
+          "request": {
+            "name": "List shipments",
+            "description": {
+              "content": "Retrieves a list of shipments with tracking, status, and delivery information for supply chain partners.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "supply-chain",
+                "shipments"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bd98fa2c-3bdb-409b-b6b7-03881faa24d3",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "supply-chain",
+                    "shipments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://developer.pg.com/api",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "f3fe302c-e69c-40d1-8575-763154d49ebd",
+    "name": "Procter & Gamble API Marketplace",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Procter & Gamble API Marketplace provides access to P&G's suite of APIs for partners, suppliers, and developers. The platform enables integration with P&G's supply chain, product data, and business operations for building applications that interact with P&G systems.",
+      "type": "text/plain"
+    }
+  }
+}

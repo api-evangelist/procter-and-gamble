@@ -1,0 +1,81 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Procter & Gamble API Marketplace",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Products",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List products",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://developer.pg.com/api/products",
+            "params": [
+              {
+                "name": "brand",
+                "value": "",
+                "type": "query",
+                "description": "Filter by brand name."
+              },
+              {
+                "name": "category",
+                "value": "",
+                "type": "query",
+                "description": "Filter by product category."
+              }
+            ]
+          },
+          "docs": "Retrieves a list of P&G products with details including brand, category, UPC codes, and product specifications."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Supply Chain",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List shipments",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://developer.pg.com/api/supply-chain/shipments"
+          },
+          "docs": "Retrieves a list of shipments with tracking, status, and delivery information for supply chain partners."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Orders",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List orders",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://developer.pg.com/api/orders"
+          },
+          "docs": "Retrieves a list of orders placed through the P&G partner integration platform."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
