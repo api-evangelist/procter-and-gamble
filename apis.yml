@@ -8,7 +8,7 @@ description: >-
 kind: contract
 position: Consumer
 access: 3rd-Party
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Consumer Goods
   - Manufacturing
@@ -32,7 +32,7 @@ apis:
       applications that interact with P&G systems and data.
     humanURL: https://developer.pg.com/
     baseURL: https://developer.pg.com
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - Consumer Goods
       - Manufacturing
