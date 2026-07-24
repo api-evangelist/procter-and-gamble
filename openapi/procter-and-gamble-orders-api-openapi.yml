@@ -1,0 +1,26 @@
+openapi: 3.1.0
+info:
+  title: Procter & Gamble API Marketplace Orders API
+  description: The Procter & Gamble API Marketplace provides access to P&G's suite of APIs for partners, suppliers, and developers. The platform enables integration with P&G's supply chain, product data, and business operations for building applications that interact with P&G systems.
+  version: '1.0'
+servers:
+- url: https://developer.pg.com/api
+tags:
+- name: Orders
+  description: Manage and track orders.
+paths:
+  /orders:
+    get:
+      operationId: listOrders
+      summary: List orders
+      description: Retrieves a list of orders placed through the P&G partner integration platform.
+      tags:
+      - Orders
+      responses:
+        '200':
+          description: Success
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
