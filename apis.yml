@@ -6,9 +6,22 @@ description: >-
   Marketplace at developer.pg.com that provides partners, suppliers, and developers with programmatic access to P&G
   systems for integrating with the company's supply chain, product data, and business operations.
 kind: contract
+accessModel:
+  pricing: enterprise
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Enterprise · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 position: Consumer
 access: 3rd-Party
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/procter-and-gamble.png
 tags:
   - Consumer Goods
   - Manufacturing
@@ -31,28 +44,48 @@ common:
   - type: GitHubOrganization
     url: https://github.com/procter-gamble
 apis:
-  - aid: procter-and-gamble:api-marketplace
-    name: Procter & Gamble API Marketplace
-    description: >-
-      The Procter & Gamble API Marketplace provides access to P&G's suite of APIs for partners, suppliers, and
-      developers. Available at developer.pg.com, the marketplace enables integration with P&G's supply chain, product
-      data, and business operations. The platform supports API discovery, documentation, and consumption for building
-      applications that interact with P&G systems and data.
-    humanURL: https://developer.pg.com/
-    baseURL: https://developer.pg.com
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    tags:
-      - Consumer Goods
-      - Manufacturing
-      - Retail
-      - Supply Chain
-    properties:
-      - type: Documentation
-        url: https://developer.pg.com/learn
-      - type: Portal
-        url: https://developer.pg.com/
-      - type: OpenAPI
-        url: openapi/procter-and-gamble-api-marketplace-openapi.yml
+- aid: procter-and-gamble:procter-and-gamble-orders-api
+  name: Procter & Gamble Orders API
+  description: Manage and track orders.
+  humanURL: https://developer.pg.com/
+  baseURL: https://developer.pg.com
+  tags:
+  - Orders
+  properties:
+  - type: OpenAPI
+    url: openapi/procter-and-gamble-orders-api-openapi.yml
+  - type: Documentation
+    url: https://developer.pg.com/learn
+  - type: Portal
+    url: https://developer.pg.com/
+- aid: procter-and-gamble:procter-and-gamble-products-api
+  name: Procter & Gamble Products API
+  description: Access P&G product catalog and data.
+  humanURL: https://developer.pg.com/
+  baseURL: https://developer.pg.com
+  tags:
+  - Products
+  properties:
+  - type: OpenAPI
+    url: openapi/procter-and-gamble-products-api-openapi.yml
+  - type: Documentation
+    url: https://developer.pg.com/learn
+  - type: Portal
+    url: https://developer.pg.com/
+- aid: procter-and-gamble:procter-and-gamble-supply-chain-api
+  name: Procter & Gamble Supply Chain API
+  description: Integration with P&G supply chain operations.
+  humanURL: https://developer.pg.com/
+  baseURL: https://developer.pg.com
+  tags:
+  - Supply Chain
+  properties:
+  - type: OpenAPI
+    url: openapi/procter-and-gamble-supply-chain-api-openapi.yml
+  - type: Documentation
+    url: https://developer.pg.com/learn
+  - type: Portal
+    url: https://developer.pg.com/
 commonProperties:
   - type: Portal
     url: https://developer.pg.com/
