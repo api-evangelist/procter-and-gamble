@@ -1,0 +1,18 @@
+{
+  "provider": "procter-and-gamble",
+  "sources": [
+    "procter-and-gamble-orders-api-openapi.yml",
+    "procter-and-gamble-products-api-openapi.yml",
+    "procter-and-gamble-supply-chain-api-openapi.yml"
+  ],
+  "outputs": [
+    "procter-and-gamble-orders-api-openapi.yml",
+    "procter-and-gamble-products-api-openapi.yml",
+    "procter-and-gamble-supply-chain-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
