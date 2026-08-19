@@ -1,0 +1,43 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Procter & Gamble API Marketplace Orders Products API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Products",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List products",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://developer.pg.com/api/products",
+            "params": [
+              {
+                "name": "brand",
+                "value": "",
+                "type": "query",
+                "description": "Filter by brand name."
+              },
+              {
+                "name": "category",
+                "value": "",
+                "type": "query",
+                "description": "Filter by product category."
+              }
+            ]
+          },
+          "docs": "Retrieves a list of P&G products with details including brand, category, UPC codes, and product specifications."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Procter & Gamble API Marketplace Orders Supply Chain API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Supply Chain",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List shipments",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://developer.pg.com/api/supply-chain/shipments"
+          },
+          "docs": "Retrieves a list of shipments with tracking, status, and delivery information for supply chain partners."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

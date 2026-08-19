@@ -1,0 +1,112 @@
+{
+  "item": [
+    {
+      "id": "82243bd0-6e5b-4dbf-8bf1-9b56e2af047c",
+      "name": "Products",
+      "description": {
+        "content": "Access P&G product catalog and data.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "84aba853-d42d-408c-b6fd-856403848b3c",
+          "name": "List products",
+          "request": {
+            "name": "List products",
+            "description": {
+              "content": "Retrieves a list of P&G products with details including brand, category, UPC codes, and product specifications.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "products"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "brand",
+                  "value": "<string>",
+                  "description": "Filter by brand name."
+                },
+                {
+                  "disabled": false,
+                  "key": "category",
+                  "value": "<string>",
+                  "description": "Filter by product category."
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c66a4641-5b2b-4713-9fb7-58c62bdc64f3",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "products"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "brand",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "category",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://developer.pg.com/api",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "5b68b353-e6f6-4533-b2a5-1a010141fad2",
+    "name": "Procter & Gamble API Marketplace Orders Products API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Procter & Gamble API Marketplace provides access to P&G's suite of APIs for partners, suppliers, and developers. The platform enables integration with P&G's supply chain, product data, and business operations for building applications that interact with P&G systems.",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "item": [
+    {
+      "id": "167250ff-f78f-4291-ad5d-b8c9f4d64545",
+      "name": "Supply Chain",
+      "description": {
+        "content": "Integration with P&G supply chain operations.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "f731370a-26cb-4579-ac61-95ed28bf8dba",
+          "name": "List shipments",
+          "request": {
+            "name": "List shipments",
+            "description": {
+              "content": "Retrieves a list of shipments with tracking, status, and delivery information for supply chain partners.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "supply-chain",
+                "shipments"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a8a2a2d7-cd87-4996-98fe-e1482e85bd1f",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "supply-chain",
+                    "shipments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://developer.pg.com/api",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "0761bd03-7d5a-457e-851c-61eac2c257a4",
+    "name": "Procter & Gamble API Marketplace Orders Supply Chain API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Procter & Gamble API Marketplace provides access to P&G's suite of APIs for partners, suppliers, and developers. The platform enables integration with P&G's supply chain, product data, and business operations for building applications that interact with P&G systems.",
+      "type": "text/plain"
+    }
+  }
+}
