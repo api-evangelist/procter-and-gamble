@@ -50,6 +50,8 @@ apis:
   humanURL: https://developer.pg.com/
   baseURL: https://developer.pg.com
   tags:
+  - Order
+  tags_raw:
   - Orders
   properties:
   - type: OpenAPI
@@ -64,6 +66,8 @@ apis:
   humanURL: https://developer.pg.com/
   baseURL: https://developer.pg.com
   tags:
+  - Product
+  tags_raw:
   - Products
   properties:
   - type: OpenAPI
