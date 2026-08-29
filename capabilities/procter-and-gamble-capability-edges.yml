@@ -1,0 +1,24 @@
+slug: procter-and-gamble
+provider: Procter & Gamble
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Retail & Consumer Goods
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 1
+edges:
+- tag: Supply Chain
+  spec_file: procter-and-gamble-supply-chain-api-openapi.yml
+  capability_id: BC-520.50
+  capability_id_l1: BC-520
+  capability_name: Logistics Operations Management
+  confidence: 0.7
+  evidence: GET /supply-chain/shipments  listShipments  List shipments
+  reason: Shipment listing under a supply-chain path is logistics/transport visibility within supply chain
+    execution.

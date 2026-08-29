@@ -44,6 +44,9 @@ created: '2026-03-21'
 modified: '2026-05-19'
 specificationVersion: '0.23'
 common:
+  - type: CapabilityMap
+    url: capabilities/procter-and-gamble-capability-edges.yml
+    name: Procter & Gamble Business Capability Map
   - type: AgenticAccess
     url: agentic-access/procter-and-gamble-agentic-access.yml
   - type: VulnerabilityDisclosure
