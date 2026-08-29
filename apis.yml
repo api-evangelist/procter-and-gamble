@@ -6,6 +6,17 @@ description: >-
   Marketplace at developer.pg.com that provides partners, suppliers, and developers with programmatic access to P&G
   systems for integrating with the company's supply chain, product data, and business operations.
 kind: contract
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: true
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - openapi
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: enterprise
   onboarding: self-serve
