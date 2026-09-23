@@ -1,7 +1,9 @@
 ---
 title: How Procter & Gamble Uses AI to Unlock New Insights ...
 url: https://sloanreview.mit.edu/article/how-procter-gamble-uses-ai-to-unlock-new-insights-from-data/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Procter & Gamble" press release artificial intelligence'
 position: 1
 source: serpapi-google

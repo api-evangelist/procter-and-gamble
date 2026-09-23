@@ -1,7 +1,9 @@
 ---
 title: How P&G Transforms Business Through Technology
 url: https://us.pg.com/blogs/innovation-at-scale-transforming-business-through-technology/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Procter & Gamble" press release artificial intelligence'
 position: 3
 source: serpapi-google

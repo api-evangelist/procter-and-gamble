@@ -1,7 +1,9 @@
 ---
 title: Google Cloud Helps Power More Personalized Experience ...
 url: https://www.googlecloudpresscorner.com/2020-07-14-Google-Cloud-Helps-Power-More-Personalized-Experience-for-Procter-Gamble-Consumers
-date: '2026-05-25'
+published: '2020-07-14'
+date_basis: url-derived
+harvested: '2026-05-25'
 query: '"Procter & Gamble" press release artificial intelligence'
 position: 2
 source: serpapi-google

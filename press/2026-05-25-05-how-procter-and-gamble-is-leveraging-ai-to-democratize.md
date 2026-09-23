@@ -1,7 +1,9 @@
 ---
 title: How Procter & Gamble is Leveraging AI to Democratize ...
 url: https://www.youtube.com/watch?v=DjxguIe1tqc
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Procter & Gamble" press release artificial intelligence'
 position: 5
 source: serpapi-google
