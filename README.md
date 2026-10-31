@@ -1,4 +1,4 @@
-# Procter & Gamble (procter-and-gamble)
+# Procter & Gamble
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,54 +66,83 @@
 
 Procter & Gamble (P&G) is one of the world's largest consumer goods companies, with a portfolio of trusted brands across beauty, grooming, health care, fabric and home care, and baby, feminine, and family care. P&G operates an API Marketplace at developer.pg.com that provides partners, suppliers, and developers with programmatic access to P&G systems for integrating with the company's supply chain, product data, and business operations.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/procter-and-gamble/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/procter-and-gamble/refs/heads/main/apis.yml)
+**Areas:** Consumer Goods · Manufacturing · Retail · Supply Chain · Fortune 100 · Consumer Packaged Goods
 
-## Scope
+## Procter & Gamble on APIs.io
 
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Procter & Gamble is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/procter-and-gamble/](https://apis.io/providers/procter-and-gamble/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (3)
 
-- Consumer Goods
-- Manufacturing
-- Retail
-- Supply Chain
+- [Procter & Gamble Orders API](https://apis.io/apis/procter-and-gamble/procter-and-gamble-orders-api/) — Manage and track orders.
+- [Procter & Gamble Products API](https://apis.io/apis/procter-and-gamble/procter-and-gamble-products-api/) — Access P&G product catalog and data.
+- [Procter & Gamble Supply Chain API](https://apis.io/apis/procter-and-gamble/procter-and-gamble-supply-chain-api/) — Integration with P&G supply chain operations.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-21
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Procter & Gamble API Marketplace
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The Procter & Gamble API Marketplace provides access to P&G's suite of APIs for partners, suppliers, and developers. Available at developer.pg.com, the marketplace enables integration with P&G's supply chain, product data, and business operations. The platform supports API discovery, documentation, and consumption for building applications that interact with P&G systems and data.
+- [Procter And Gamble Agentic Access](https://apis.io/agentic-access/procter-and-gamble/procter-and-gamble-agentic-access/)
 
-- **Human URL:** [https://developer.pg.com/](https://developer.pg.com/)
-- **Base URL:** `https://developer.pg.com`
+#### Collections (4)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Consumer Goods
-- Manufacturing
-- Retail
-- Supply Chain
+- [Procter & Gamble API Marketplace](https://apis.io/collections/procter-and-gamble/open-procter-and-gamble-api-marketplace/)
+- [Procter & Gamble API Marketplace Orders API](https://apis.io/collections/procter-and-gamble/open-procter-and-gamble-orders-api/)
+- [Procter & Gamble API Marketplace Orders Products API](https://apis.io/collections/procter-and-gamble/open-procter-and-gamble-products-api/)
+- [Procter & Gamble API Marketplace Orders Supply Chain API](https://apis.io/collections/procter-and-gamble/open-procter-and-gamble-supply-chain-api/)
 
-#### Properties
+#### Security (3)
 
-- [Documentation](https://developer.pg.com/learn)
-- [Portal](https://developer.pg.com/)
-- [OpenAPI](openapi/procter-and-gamble-api-marketplace-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/procter-and-gamble-api-marketplace.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/procter-and-gamble-api-marketplace.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Procter And Gamble Authentication](https://apis.io/security/procter-and-gamble/procter-and-gamble-authentication/)
+- [Procter And Gamble Domain Security](https://apis.io/security/procter-and-gamble/procter-and-gamble-domain-security/)
+- [Procter And Gamble Vulnerability Disclosure](https://apis.io/security/procter-and-gamble/procter-and-gamble-vulnerability-disclosure/)
 
-- [GitHub Organization](https://github.com/procter-gamble)
+#### Plans and pricing (1)
 
-## Maintainers
+Published plans, tiers and prices.
 
-**FN:** API Evangelist
-**Email:** info@apievangelist.com
+- [Procter And Gamble Plans Pricing](https://apis.io/plans/procter-and-gamble/procter-and-gamble-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Procter And Gamble Rate Limits](https://apis.io/rate-limits/procter-and-gamble/procter-and-gamble-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Procter And Gamble Finops](https://apis.io/finops/procter-and-gamble/procter-and-gamble-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [GitHub](https://github.com/procter-gamble)
+
+## API Evangelist rating
+
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
+
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Procter & Gamble: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/procter-and-gamble/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
